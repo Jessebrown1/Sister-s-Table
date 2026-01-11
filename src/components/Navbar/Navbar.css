@@ -1,0 +1,303 @@
+/* ===================================================== */
+/* TOP BAR (DESKTOP + MOBILE) */
+/* ===================================================== */
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+
+  background: transparent;
+  border-bottom: 1px solid transparent;
+  transition: background 0.35s ease, backdrop-filter 0.35s ease, border 0.35s ease;
+}
+
+
+/* Cart button wrapper */
+.cart-btn {
+  position: relative;
+}
+
+
+/* Brand */
+.brand {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: #ffffff;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.brand:hover {
+  color: #22c55e;
+  transform: scale(1.05);
+}
+
+/* ===================================================== */
+/* DESKTOP NAV */
+/* ===================================================== */
+
+.navbar-links {
+  display: flex;
+  gap: 50px;
+  flex: 1;
+  justify-content: center;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #e5e7eb;
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  position: relative;
+  transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Hover effect */
+.navbar-links a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+  background: rgba(34, 197, 94, 0.15);
+  opacity: 0;
+  transform: scale(0.85);
+  transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+  z-index: -1;
+}
+
+.navbar-links a:hover::after {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.navbar-links a:hover {
+  color: #22c55e;
+  transform: translateY(-2px);
+}
+
+/* ===================================================== */
+/* RIGHT ACTIONS (DESKTOP) */
+/* ===================================================== */
+
+.topbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.action-btn {
+  background: rgba(255, 255, 255, 0.05);
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  color: #e5e7eb;
+  cursor: pointer;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.action-btn:hover {
+  background: rgba(34, 197, 94, 0.2);
+  color: #22c55e;
+  transform: scale(1.15);
+}
+
+/* ===================================================== */
+/* HAMBURGER (MOBILE ONLY) */
+/* ===================================================== */
+
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1.7rem;
+  cursor: pointer;
+  margin-left: 12px;
+}
+
+
+/* ===================================================== */
+/* OVERLAY */
+/* ===================================================== */
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}
+
+/* ===================================================== */
+/* DRAWER (MOBILE) */
+/* ===================================================== */
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 300px;
+  height: 100%;
+  background: #ffffff;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  transition: right 0.35s ease;
+}
+
+.drawer.open {
+  right: 0;
+}
+
+/* Drawer Header */
+.drawer-header {
+  padding: 16px;
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+
+.drawer-header h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.drawer-header p {
+  margin: 4px 0 0;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+/* Welcome Card */
+.welcome-card {
+  margin: 16px;
+  padding: 14px;
+  border-radius: 12px;
+  background: #f8f8f8;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  font-size: 1.8rem;
+  color: #999;
+}
+
+.welcome-card h4 {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.welcome-card p {
+  margin: 2px 0 0;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.signin-btn {
+  margin-left: auto;
+  background: #ff6a00;
+  border: none;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+/* Drawer Menu */
+.drawer-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.drawer-menu a {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  text-decoration: none;
+  color: #111;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.drawer-menu a span {
+  flex: 1;
+}
+
+.drawer-menu a svg:last-child {
+  color: #bbb;
+}
+
+/* Drawer Footer */
+.drawer-footer {
+  margin-top: auto;
+  padding: 16px;
+  font-size: 0.75rem;
+  color: #888;
+  text-align: center;
+}
+
+/* ===================================================== */
+/* MOBILE RULES */
+/* ===================================================== */
+
+
+@media (max-width: 768px) {
+  /* Hide desktop nav */
+  .navbar-links {
+    display: none;
+  }
+
+  /* Keep actions container visible */
+  .topbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  /* Show ONLY search + cart */
+  .action-btn {
+    display: flex;
+  }
+
+  /* Hide user icon on mobile */
+  .topbar-actions .action-btn:nth-of-type(3) {
+    display: none;
+  }
+
+  /* Show hamburger last */
+  .menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
