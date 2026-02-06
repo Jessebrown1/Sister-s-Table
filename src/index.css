@@ -12,3 +12,22 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+
+
+/* Hide scrollbar but keep scroll functionality */
+
+/* Chrome, Safari, Edge */
+::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+/* Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* Internet Explorer / Legacy Edge */
+body {
+  -ms-overflow-style: none;
+}

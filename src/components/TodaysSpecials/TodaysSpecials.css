@@ -1,0 +1,241 @@
+/* src/components/TodaysSpecials.css */
+
+:root {
+    --gold: #c9a24d;
+    --gold-soft: rgba(201, 162, 77, 0.15);
+    --text-dark: #1f1f1f;
+    --text-muted: #6b6b6b;
+    --border-soft: #e6e6e6;
+  }
+  
+  /* SECTION */
+  .todays-specials {
+    padding: 5rem 2rem;
+    background: linear-gradient(135deg, #2A2A2A 0%, #323232 100%);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .specials-container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  /* HEADER */
+  .specials-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+  }
+  
+  .title-accent {
+    color: var(--gold);
+  }
+  
+  .section-subtitle {
+    font-size: 1.05rem;
+    color: var(--text-muted);
+    max-width: 520px;
+    line-height: 1.6;
+  }
+  
+  /* COUNTDOWN */
+  .countdown {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 1rem 1.6rem;
+    border-radius: 14px;
+    background: #ffffff;
+    border: 1px solid var(--border-soft);
+    font-weight: 600;
+    color: var(--text-dark);
+  }
+  
+  /* GRID */
+  .specials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2.5rem;
+  }
+  
+  /* CARD */
+  .special-card {
+    background: #ffffff;
+    border: 1px solid var(--border-soft);
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.04);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+  }
+  
+  .special-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 30px 60px rgba(201, 162, 77, 0.18);
+  }
+  
+  /* IMAGE */
+  .special-image {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+  }
+  
+  .special-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s ease;
+  }
+  
+  .special-card:hover img {
+    transform: scale(1.05);
+  }
+  
+  /* TAGS */
+  .special-tag {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    background: rgba(255, 255, 255, 0.95);
+    color: var(--gold);
+    padding: 6px 14px;
+    font-size: 0.75rem;
+    border-radius: 20px;
+    font-weight: 600;
+  }
+  
+  .discount-pill {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: var(--gold);
+    color: #fff;
+    padding: 6px 14px;
+    font-size: 0.75rem;
+    border-radius: 20px;
+    font-weight: 600;
+  }
+  
+  /* CONTENT */
+  .special-content {
+    padding: 1.8rem;
+  }
+  
+  .special-name {
+    font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.4rem;
+  }
+  
+  .special-description {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 1.2rem;
+  }
+  
+  /* PRICE */
+  .price-row {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .price-old {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 0.9rem;
+  }
+  
+  .price-new {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--gold);
+  }
+  
+  /* FEATURES */
+  .features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1.6rem;
+  }
+  
+  .features li {
+    font-size: 0.85rem;
+    color: #555;
+    margin-bottom: 0.4rem;
+  }
+  
+  /* BUTTON */
+  .order-btn {
+    width: 100%;
+    background: var(--gold-soft);
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    padding: 0.9rem;
+    border-radius: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .order-btn:hover {
+    background: var(--gold);
+    color: #ffffff;
+  }
+  
+  /* FOOTER */
+  .specials-footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-soft);
+  }
+  
+  .disclaimer {
+    color: #888;
+    font-size: 0.85rem;
+    text-align: center;
+  }
+  
+  /* SCROLL REVEAL */
+  .special-card {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  
+  .special-card.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2.2rem;
+    }
+  
+    .todays-specials {
+      padding: 3rem 1.2rem;
+    }
+  }
+  

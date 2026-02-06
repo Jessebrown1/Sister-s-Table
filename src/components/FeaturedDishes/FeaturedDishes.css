@@ -1,0 +1,391 @@
+    /* src/components/FeaturedDishes.css */
+    .featured-dishes {
+        padding: 5rem 2rem;
+        background: linear-gradient(135deg, #2A2A2A 0%, #323232 100%);
+        position: relative;
+        overflow: hidden;
+        color: #F5F5F5;
+    }
+    
+    
+    .section-header {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    
+    .section-title {
+        font-family: 'Playfair Display', serif;
+        margin-top: -10%;
+        font-size: 3rem;
+        font-weight: 700;
+        color: #FFFFFF;
+        margin-bottom: 2rem;
+        position: relative;
+        display: inline-block;
+    }
+    
+    .title-accent {
+        color:  #C9A24D; /* Rich Gold */
+        position: relative;
+    }
+    
+    .title-accent::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg,  #C9A24D, transparent);
+        border-radius: 2px;
+    }
+    
+    .section-subtitle {
+        font-size: 1.1rem;
+        color: #A0A0A0;
+        max-width: 600px;
+        margin: 0 auto;
+        line-height: 1.6;
+    }
+    
+    .carousel-container {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 4rem;
+    }
+    
+    .carousel-track {
+        display: flex;
+        transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        height: 500px;
+        align-items: center;
+        perspective: 1000px;
+    }
+    
+    .dish-card {
+        position: absolute;
+        width: 350px;
+        background: #1A1A1A;
+        border: 1px solid #333;
+        border-radius: 20px;
+        overflow: hidden;
+        transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .dish-card.active {
+        width: 400px;
+        transform: translateX(-50%) scale(1.05);
+        box-shadow: 0 30px 60px rgba(201, 162, 77, 0.28);
+        border-color: #C9A24D;
+        z-index: 3;
+    }
+    
+    .dish-card.next {
+        left: calc(50% + 420px);
+    }
+    
+    .dish-card.prev {
+        left: calc(50% - 420px);
+    }
+    
+    .dish-image-container {
+        position: relative;
+        height: 220px;
+        overflow: hidden;
+    }
+    
+    .dish-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
+    
+    .dish-card.active .dish-image {
+        transform: scale(1.05);
+    }
+    
+    .dish-tags {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        display: flex;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+    
+    .dish-tag {
+        background: rgba(255, 107, 53, 0.9);
+        color: white;
+        padding: 0.4rem 0.8rem;
+        border-radius: 20px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        backdrop-filter: blur(10px);
+    }
+    
+    .prep-time {
+        position: absolute;
+        bottom: 1rem;
+        right: 1rem;
+        background: rgba(26, 26, 26, 0.9);
+        color: white;
+        padding: 0.4rem 0.8rem;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        backdrop-filter: blur(10px);
+    }
+    
+    .dish-content {
+        padding: 1.5rem;
+    }
+    
+    .dish-name {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #FFFFFF;
+        margin-bottom: 0.5rem;
+        font-family: 'Playfair Display', serif;
+    }
+    
+    .dish-description {
+        color: #A0A0A0;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin-bottom: 1rem;
+        min-height: 70px;
+    }
+    
+    .dish-rating {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .stars {
+        display: flex;
+        gap: 0.2rem;
+    }
+    
+    .star-filled {
+        color: #FFD700;
+        font-size: 0.9rem;
+    }
+    
+    .star-empty {
+        color: #333;
+        font-size: 0.9rem;
+    }
+    
+    .rating-value {
+        color: #FFFFFF;
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+    
+    .review-count {
+        color: #666;
+        font-size: 0.85rem;
+    }
+    
+    .dish-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .price-section {
+        display: flex;
+        align-items: baseline;
+    }
+    
+    .price-currency {
+        color: #FF6B35;
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    
+    .price-value {
+        color: #FFFFFF;
+        font-size: 2rem;
+        font-weight: 700;
+        margin-left: 0.2rem;
+    }
+    
+    .add-to-cart-btn {
+        background: linear-gradient(135deg, #FF6B35, #FF8B5E);
+        color: white;
+        border: none;
+        padding: 0.8rem 1.5rem;
+        border-radius: 10px;
+        font-weight: 600;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: all 0.3s ease;
+    }
+    
+    .add-to-cart-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(255, 107, 53, 0.3);
+    }
+    
+    .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(26, 26, 26, 0.8);
+        border: 1px solid #333;
+        color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        z-index: 10;
+        backdrop-filter: blur(10px);
+    }
+    
+    .carousel-btn:hover {
+        background: rgba(255, 107, 53, 0.9);
+        border-color: #FF6B35;
+        transform: translateY(-50%) scale(1.1);
+    }
+    
+    .prev-btn {
+        left: 0;
+    }
+    
+    .next-btn {
+        right: 0;
+    }
+    
+    .carousel-dots {
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-top: 3rem;
+    }
+    
+    .carousel-dot {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #333;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    
+    .carousel-dot.active {
+        background: #FF6B35;
+        transform: scale(1.2);
+    }
+    
+    .carousel-indicator {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        display: flex;
+        align-items: baseline;
+        background: rgba(26, 26, 26, 0.8);
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        backdrop-filter: blur(10px);
+        border: 1px solid #333;
+    }
+    
+    .current-slide {
+        color: #FF6B35;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    
+    .total-slides {
+        color: #666;
+        font-size: 1rem;
+    }
+    @media (max-width: 1024px) {
+        .carousel-container {
+        padding: 0;
+        overflow: hidden;
+        }
+    
+        .carousel-track {
+        display: flex;
+        height: auto;
+        align-items: stretch;
+        gap: 20px;
+        transform: translateX(0) !important;
+        }
+    
+        .dish-card {
+        position: relative;
+        left: auto;
+        transform: none;
+        width: 320px;
+        flex-shrink: 0;
+        }
+    
+        .dish-card.active {
+        transform: none;
+        width: 320px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        }
+    
+        .dish-card.prev,
+        .dish-card.next {
+        display: none;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .featured-dishes {
+        padding: 2.5rem 1rem;
+        }
+    
+        .section-title {
+        font-size: 2rem;
+        }
+    
+        .carousel-container {
+        padding: 0;
+        }
+    
+        .carousel-track {
+        gap: 16px;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        padding-bottom: 10px;
+        }
+    
+        .dish-card {
+        width: 85%;
+        max-width: 320px;
+        scroll-snap-align: center;
+        }
+    
+        .carousel-btn {
+        display: none;
+        }
+    
+        .carousel-dots {
+        margin-top: 2rem;
+        }
+    }
+    

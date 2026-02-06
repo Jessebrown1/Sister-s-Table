@@ -25,7 +25,7 @@ const Navbar = () => {
       {/* ================= TOP BAR ================= */}
       <header className="topbar">
         {/* Logo */}
-        <span className="brand">Sister’s Table</span>
+        <span className="brand">Golden Spoon</span>
 
         {/* Desktop Navigation */}
         <nav className="navbar-links">
@@ -42,9 +42,7 @@ const Navbar = () => {
 
         {/* Right Actions */}
         <div className="topbar-actions">
-          <button className="action-btn">
-            <FaSearch />
-          </button>
+
 
           {/* ✅ Cart link fixed (no button wrapping Link) */}
           <Link to="/cart" className="action-btn cart-btn">
@@ -78,7 +76,7 @@ const Navbar = () => {
       <aside className={`drawer ${isOpen ? "open" : ""}`}>
         {/* Drawer Header */}
         <div className="drawer-header">
-          <h2>Sister’s Table</h2>
+          <h2>Golden Spoon</h2>
           <p>Authentic Home Cuisine</p>
           <button
             className="close-btn"
