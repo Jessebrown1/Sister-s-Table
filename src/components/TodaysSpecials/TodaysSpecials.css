@@ -72,7 +72,7 @@
   
   /* CARD */
   .special-card {
-    background: #ffffff;
+    background: linear-gradient(135deg, #2A2A2A 0%, #323232 100%);
     border: 1px solid var(--border-soft);
     border-radius: 22px;
     overflow: hidden;
@@ -137,12 +137,12 @@
     font-family: "Playfair Display", serif;
     font-size: 1.2rem;
     font-weight: 600;
-    color: var(--text-dark);
+    color: white;
     margin-bottom: 0.4rem;
   }
   
   .special-description {
-    color: var(--text-muted);
+    color: white;
     font-size: 0.9rem;
     line-height: 1.6;
     margin-bottom: 1.2rem;
@@ -158,7 +158,7 @@
   
   .price-old {
     text-decoration: line-through;
-    color: #999;
+    color: white;
     font-size: 0.9rem;
   }
   
@@ -177,7 +177,7 @@
   
   .features li {
     font-size: 0.85rem;
-    color: #555;
+    color: white;
     margin-bottom: 0.4rem;
   }
   
