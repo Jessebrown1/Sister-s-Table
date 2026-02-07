@@ -1,7 +1,309 @@
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
+    /* =========================
+    LUXURY RESTAURANT FOOTER
+    ========================= */
+
+    :root {
+        --gold: #c6a75e;
+        --gold-soft: rgba(198, 167, 94, 0.35);
+        --bg-main: #0f0f0f;
+        --bg-soft: #161616;
+        --text-main: #ffffff;
+        --text-muted: #9a9a9a;
+    }
+    
+    /* ===== BASE ===== */
+    .footer {
+        background: var(--bg-main);
+        color: var(--text-main);
+        border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+    
+    .footer-top {
+        padding: 5rem 2rem 4rem;
+        background: var(--bg-soft);
+    }
+    
+    .footer-container {
+        max-width: 1280px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1.2fr 1fr 1fr 1.2fr;
+        gap: 3.5rem;
+    }
+    
+    /* ===== BRAND ===== */
+    .footer-logo {
+        font-family: "Playfair Display", serif;
+        font-size: 2.6rem;
+        font-weight: 600;
+        letter-spacing: 0.4px;
+        margin-bottom: 1rem;
+    }
+    
+    .footer-logo::after {
+        content: "";
+        display: block;
+        width: 42px;
+        height: 2px;
+        margin-top: 0.8rem;
+        background: var(--gold);
+    }
+    
+    .footer-tagline {
+        color: var(--text-muted);
+        font-size: 0.95rem;
+        line-height: 1.7;
+        max-width: 320px;
+    }
+    
+    /* ===== SOCIALS ===== */
+    .social-links {
+        display: flex;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+    
+    .social-link {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--text-muted);
+        transition: all 0.25s ease;
+    }
+    
+    .social-link:hover {
+        color: var(--gold);
+        border-color: var(--gold);
+    }
+    
+    /* ===== HEADINGS ===== */
+    .footer-heading {
+        font-size: 0.85rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        color: var(--gold);
+        margin-bottom: 1.8rem;
+    }
+    
+    /* ===== LINKS ===== */
+    .footer-menu li {
+        margin-bottom: 0.75rem;
+    }
+    
+    .footer-menu a {
+        font-size: 0.95rem;
+        color: var(--text-muted);
+        transition: color 0.25s ease;
+    }
+    
+    .footer-menu a:hover {
+        color: var(--text-main);
+    }
+    .footer-menu {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    
+    /* ===== CONTACT ===== */
+    .contact-info {
+        display: flex;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+    
+    .contact-item {
+        display: flex;
+        gap: 1rem;
+        align-items: flex-start;
+    }
+    
+    .contact-item svg {
+        color: var(--gold);
+        margin-top: 0.25rem;
+    }
+    
+    .contact-item span {
+        font-size: 0.95rem;
+        color: var(--text-muted);
+    }
+    
+    /* ===== FOOTER LOVE ===== */
+    .footer-love {
+        background: #0b0b0b;
+        border-top: 1px solid rgba(255, 255, 255, 0.06);
+        text-align: center;
+        padding: 1.4rem;
+        font-size: 0.85rem;
+        color: var(--text-muted);
+    }
+    
+    .footer-love span {
+        color: var(--gold);
+    }
+
+    
+    
+    /* =========================
+        RESPONSIVE
+        ========================= */
+    
+    @media (max-width: 1100px) {
+        .footer-container {
+        grid-template-columns: 1fr 1fr;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .footer-top {
+        padding: 4rem 1.5rem 3rem;
+        }
+    
+        .footer-container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+        }
+    
+        .footer-logo::after {
+        margin-left: auto;
+        margin-right: auto;
+        }
+    
+        .social-links {
+        justify-content: center;
+        }
+    
+        .contact-item {
+        justify-content: center;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .footer-logo {
+        font-size: 2.1rem;
+        }
+    
+        .footer-tagline {
+        font-size: 0.9rem;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        /* remove list dots completely */
+        .footer-menu,
+        .footer-menu li {
+        list-style: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        }
+    
+        .footer-menu li {
+        margin-bottom: 0.9rem;
+        }
+    
+        /* center content cleanly */
+        .footer-container {
+        text-align: center;
+        }
+    
+        .footer-menu a {
+        display: inline-block;
+        padding: 0.4rem 0;
+        font-size: 1rem;
+        }
+    
+        .contact-info {
+        align-items: center;
+        }
+    
+        .contact-item {
+        justify-content: center;
+        text-align: center;
+        }
+    }
+    
+
+
+    @media (max-width: 480px) {
+        .footer-top {
+        padding: 3.5rem 1.2rem 3rem;
+        }
+    
+        .footer-heading {
+        font-size: 0.8rem;
+        letter-spacing: 1.8px;
+        }
+    
+        .footer-menu a {
+        font-size: 0.95rem;
+        }
+    }
+    
+
+    .trust-badges {
+        display: flex;
+        gap: 1.5rem;
+        justify-content: center; /* center badges */
+        margin-top: 1rem;
+        flex-wrap: wrap;
+    }
+    
+    .trust-badge {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        background: #1a1a1a;
+        border: 1px solid #333;
+        border-radius: 12px;
+        padding: 0.6rem 1.2rem;
+        font-size: 0.95rem;
+        font-weight: 500;
+        color: #fff;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4);
+        transition: all 0.3s ease;
+        cursor: default;
+    }
+    
+    .trust-badge:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(255, 215, 0, 0.4);
+        border-color: #FFD700;
+    }
+    
+    .trust-icon {
+        font-size: 1.3rem;
+        color: #FFD700; /* gold accent */
+        flex-shrink: 0;
+    }
+    
+    /* Badge text */
+    .trust-badge span {
+        white-space: nowrap;
+    }
+    
+    /* Mobile responsive */
+    @media (max-width: 480px) {
+        .trust-badges {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+        }
+    
+        .trust-badge {
+        width: 90%;
+        justify-content: center;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+        }
+    
+        .trust-icon {
+        font-size: 1.2rem;
+        }
+    }
+    

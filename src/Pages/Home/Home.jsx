@@ -7,6 +7,7 @@ import Footer from "../../components/Footer/Footer";
 import MenuCategories from "../../components/MenuCategories/MenuCategories";
 import TodaysSpecials from "../../components/TodaysSpecials/TodaysSpecials";
 
+
 function Home() {
   return (
     <>
