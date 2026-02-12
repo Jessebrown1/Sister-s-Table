@@ -93,8 +93,8 @@
             {/* HEADER */}
             <header className="specials-header">
             <div>
-                <h2 id="specials-title" className="section-title">
-                Today’s <span className="title-accent">Special</span> Offers
+                <h2 id="specials-title" className="sectiion-title">
+                Today’s <span className="title-aaccent">Special</span> Offers
                 </h2>
                 <p className="section-subtitle">
                 Carefully curated dishes, available for a limited time.

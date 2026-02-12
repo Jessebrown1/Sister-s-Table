@@ -75,18 +75,18 @@ function Hero() {
           alt="Delicious Ghanaian cuisine"
           className="hero-bg"
         />
-        <div className="hero-grain-overlay"></div>
-        <div className="hero-gradient-overlay"></div>
+        <div className="hero-grain-overlayy"></div>
+        <div className="hero-gradient-overlayy"></div>
       </div>
 
       {/* Main Content */}
-      <div className="hero-content">
+      <div className="hero-contentt">
         {/* Hero Title */}
         <div className="text-reveal">
-          <h1 className="hero-title">
+          <h1 className="hero-ttitle">
             <span className="line line-1">Welcome to</span>
             <span className="line line-2">
-              <span className="highlight-text">The Golden Spoon</span>
+              <span className="highlightt-text">The Golden Spoon</span>
             </span>
             <span className="line line-3">
               Ghanaian Cuisine, Crafted with Care
@@ -95,7 +95,7 @@ function Hero() {
         </div>
 
         {/* Subtitle with Typing Animation */}
-        <p className="hero-subtitle">
+        <p className="hero-subtitlee">
           <span className="typed-text">Refined Flavors, Rooted in Tradition</span>
           <span className="cursor"></span>
         </p>

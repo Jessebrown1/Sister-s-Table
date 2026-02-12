@@ -10,8 +10,8 @@
   --nav-bg-card: #242424;
   --nav-bg-hover: #2a2a2a;
   
-  --nav-accent-color: #FF6B35;
-  --nav-accent-hover: #FF8B5E;
+  --nav-accent-color:#c9a24d;
+  --nav-accent-hover: #c9a24d;
   --nav-accent-light: rgba(255, 107, 53, 0.1);
   
   --nav-text-primary: #FFFFFF;
@@ -656,14 +656,7 @@
     max-width: 320px;
   }
   
-  /* Adjust body padding for mobile */
-  body {
-    padding-top: calc(70px + 25px);
-  }
-  
-  body.nav-scrolled {
-    padding-top: 70px;
-  }
+
   
   .topbar {
     height: 70px;
@@ -746,13 +739,7 @@
   }
   
   /* Adjust body padding for smaller mobile */
-  body {
-    padding-top: calc(65px + 20px);
-  }
-  
-  body.nav-scrolled {
-    padding-top: 65px;
-  }
+
   
   .topbar {
     height: 65px;

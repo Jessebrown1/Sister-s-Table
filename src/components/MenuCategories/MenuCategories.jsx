@@ -98,7 +98,7 @@
         <section className="menu-categories" aria-labelledby="menu-heading">
         <div className="section-header">
             <h2 id="menu-heading" className="section-title">
-            Explore Our <span className="title-accent">Menu</span>
+            Explore Our <span className="title-accennt">Menu</span>
             </h2>
             <p className="section-subtitle">
             A curated expression of Ghanaian cuisine, crafted with elegance

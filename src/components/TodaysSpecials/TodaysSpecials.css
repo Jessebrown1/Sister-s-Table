@@ -29,9 +29,10 @@
     margin-bottom: 4rem;
     flex-wrap: wrap;
     gap: 2rem;
+    color:  #ffffff;;
   }
   
-  .section-title {
+  .sectiion-title {
     font-family: 'Playfair Display', serif;
     font-size: 3rem;
     font-weight: 700;
@@ -39,7 +40,7 @@
     margin-bottom: 1rem;
   }
   
-  .title-accent {
+  .title-aaccent {
     color: var(--gold);
   }
   

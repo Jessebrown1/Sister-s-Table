@@ -1,0 +1,42 @@
+/* Contact.css */
+
+/* Ensure the main takes full viewport height */
+.contact-main {
+    background: #0f0f0f;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Start from top */
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  
+  /* Make the Visme form responsive */
+  .visme_d {
+    width: 100% !important;
+    max-width: 800px; /* Optional max width */
+    min-height: 100vh !important;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .contact-main {
+      padding: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .contact-main {
+      padding: 1rem;
+    }
+    .visme_d {
+      min-height: 100vh !important;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .contact-main {
+      padding: 0.5rem;
+    }
+  }
+  

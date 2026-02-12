@@ -70,7 +70,7 @@
 }
 
 /* Grain Overlay Effect */
-.hero-grain-overlay {
+.hero-grain-overlayy {
   position: absolute;
   top: 0;
   left: 0;
@@ -82,7 +82,7 @@
 }
 
 /* Gradient Overlay */
-.hero-gradient-overlay {
+.hero-gradient-overlayy {
   position: absolute;
   top: 0;
   left: 0;
@@ -163,7 +163,7 @@
 }
 
 /* Hero Content */
-.hero-content {
+.hero-contentt {
   max-width: 1200px;
   width: 100%;
   text-align: center;
@@ -177,7 +177,7 @@
   margin-bottom: 2rem;
 }
 
-.hero-title {
+.hero-ttitle {
   font-family: 'Playfair Display', serif;
   font-size: clamp(2.5rem, 5vw, 4.5rem);
   font-weight: 700;
@@ -186,20 +186,20 @@
   margin-bottom: 1.5rem;
 }
 
-.hero-title .line {
+.hero-ttitle .line {
   display: block;
   overflow: hidden;
 }
 
-.hero-title .line-1 {
+.hero-ttitle .line-1 {
   animation: slideUp 1s 0.3s cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
-.hero-title .line-2 {
+.hero-ttitle .line-2 {
   animation: slideUp 1s 0.6s cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
-.hero-title .line-3 {
+.hero-ttitle .line-3 {
   animation: slideUp 1s 0.9s cubic-bezier(0.4, 0, 0.2, 1) both;
 }
 
@@ -214,13 +214,13 @@
   }
 }
 
-.highlight-text {
-  color: var(--primary-color);
+.highlightt-text {
+  color: #C9A24D;
   position: relative;
   display: inline-block;
 }
 
-.highlight-text::after {
+.highlightt-text::after {
   content: '';
   position: absolute;
   bottom: 5px;
@@ -238,7 +238,7 @@
 }
 
 /* Subtitle with Typing Effect */
-.hero-subtitle {
+.hero-subtitlee {
   font-size: clamp(1rem, 2vw, 1.3rem);
   color: var(--text-secondary);
   margin-bottom: 1rem;

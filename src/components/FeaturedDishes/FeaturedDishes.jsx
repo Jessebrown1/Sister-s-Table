@@ -132,8 +132,8 @@ const featuredDishes = [
     return (
         <section className="featured-dishes">
         <div className="section-header">
-            <h2 className="section-title">
-            Our <span className="title-accent">Signature</span> Dishes
+            <h2 className="section-tiitle">
+            Our <span className="title-acccent">Signature</span> Dishes
             </h2>
             <p className="section-subtitle">
             Crafted with tradition, refined with premium ingredients.

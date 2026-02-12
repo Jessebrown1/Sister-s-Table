@@ -24,12 +24,12 @@
         margin-bottom: 0.8rem;
     }
     
-    .title-accent {
+    .title-accennt {
         color: #C9A24D;
         position: relative;
     }
     
-    .title-accent::after {
+    .title-accennt::after {
         content: '';
         position: absolute;
         bottom: -6px;
