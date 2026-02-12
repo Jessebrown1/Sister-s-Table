@@ -1,9 +1,9 @@
     import React, { useState, useEffect, useRef } from "react";
     import { FaClock, FaShoppingCart } from "react-icons/fa";
     import "./TodaysSpecials.css";
-    import bundle from "../../assets/bundle.jpg"
-    import combo from "../../assets/combo.jpg"
-    import spicy from "../../assets/spicy.jpg"
+    import bundle from "../../assets/bundle.jpg";
+    import combo from "../../assets/combo.jpg";
+    import spicy from "../../assets/spicy.jpg";
 
     const TodaysSpecials = () => {
     const [timeLeft, setTimeLeft] = useState({
