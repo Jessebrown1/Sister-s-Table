@@ -30,7 +30,7 @@
 
 /* Page Container */
 .menu-page {
-  min-height: 100vh;
+  min-height: 100dvh;
   background: #0F0F0F;
   color: var(--text-primary);
   font-family: 'Inter', sans-serif;
@@ -40,7 +40,7 @@
 
 .menu-hero {
   position: relative;
-  height: clamp(320px, 100vh, 100vh);
+  height: clamp(320px, 100dvh, 100dvh);
   min-height: 420px;
 
   background-image: url("https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg");
@@ -785,7 +785,7 @@
 @media (max-width: 768px) {
   .menu-page {
     padding-top: 60px; /* match your fixed navbar height */
-    min-height: 100vh;
+    min-height: 100dvh;
     min-height: 100dvh;
   }
 
@@ -833,7 +833,7 @@
 @media (max-width: 480px) {
   .menu-page {
     padding-top: 00px;
-    min-height: 100vh;
+    min-height: 100dvh;
 
   }
 

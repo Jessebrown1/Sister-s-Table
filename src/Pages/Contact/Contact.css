@@ -3,7 +3,7 @@
 /* Ensure the main takes full viewport height */
 .contact-main {
     background: #0f0f0f;
-    min-height: 100vh;
+    min-height: 100dvh;
     display: flex;
     justify-content: center;
     align-items: flex-start; /* Start from top */
@@ -15,7 +15,7 @@
   .visme_d {
     width: 100% !important;
     max-width: 800px; /* Optional max width */
-    min-height: 100vh !important;
+    min-height: 100dvh !important;
   }
   
   /* Responsive adjustments */
@@ -30,7 +30,7 @@
       padding: 1rem;
     }
     .visme_d {
-      min-height: 100vh !important;
+      min-height: 100dvh !important;
     }
   }
   

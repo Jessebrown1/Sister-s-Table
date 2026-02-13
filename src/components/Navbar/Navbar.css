@@ -388,7 +388,7 @@
   right: -100%;
   width: 100%;
   max-width: 380px;
-  height: 100vh;
+  height: 100dvh;
   z-index: 1000;
   background-color: var(--nav-bg-primary);
   border-left: 1px solid var(--nav-border-color);
