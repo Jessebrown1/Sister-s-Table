@@ -1,9 +1,9 @@
     import React, { useState, useEffect, useRef } from "react";
     import { FaClock, FaShoppingCart } from "react-icons/fa";
     import "./TodaysSpecials.css";
-    import bundle from "../../assets/bundle.jpg";
-    import combo from "../../assets/combo.jpg";
-    import spicy from "../../assets/spicy.jpg";
+    import family from "../../assets/family.jpg"
+    import love from "../../assets/love.jpg"
+    import special from "../../assets/special.jpg"
 
     const TodaysSpecials = () => {
     const [timeLeft, setTimeLeft] = useState({
@@ -19,7 +19,7 @@
         id: 1,
         name: "Family Feast Bundle",
         description: "Complete meal for 4–6 people with signature dishes",
-        image: bundle,
+        image: family,
         originalPrice: 89.99,
         discountedPrice: 69.99,
         discount: 22,
@@ -30,7 +30,7 @@
         id: 2,
         name: "Lunch Special Combo",
         description: "Perfect midday meal with drink and side included",
-        image: combo,
+        image: special,
         originalPrice: 24.99,
         discountedPrice: 18.99,
         discount: 24,
@@ -41,7 +41,7 @@
         id: 3,
         name: "Spicy Lover’s Package",
         description: "Extra spicy selection for heat lovers",
-        image: spicy,
+        image: love,
         originalPrice: 34.99,
         discountedPrice: 27.99,
         discount: 20,
